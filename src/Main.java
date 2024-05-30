@@ -11,6 +11,16 @@ class TwoLinksNode{
         return ""+this.data;
     }
 }
+class DNode{
+    int data;
+    DNode prev;
+    DNode next;
+    DNode(int data){
+        this.data = data;
+        prev = null;
+        next = null;
+    }
+}
 class Node{
     int data;
     Node next;
@@ -106,5 +116,15 @@ public class Main {
         }while (cur!=head);
         System.out.println();
     }
+
+    public static void DTraverse(DNode head){
+        DNode cur = head;
+        while(cur!=null){
+            System.out.print(cur.data+" ");
+            cur = cur.next;
+        }
+        System.out.println();
+    }
+
 
 }
