@@ -17,7 +17,7 @@ public class CreatingCloneOfLinkedList {
         Main.printTwoDLL(cloneHead);
 
     }
-    public static TwoLinksNode createCloneOfLL(TwoLinksNode head){
+     static TwoLinksNode createCloneOfLL(TwoLinksNode head){
 
         if (head == null ) return null;
         TwoLinksNode cur = head;

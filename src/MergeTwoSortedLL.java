@@ -1,11 +1,11 @@
 public class MergeTwoSortedLL {
     public static void main(String[] args) {
-        Node head1 = new Node(18,null);
+        Node head1 = new Node(18);
         Main.insert(head1,20);
         Main.insert(head1,30);
         Main.insert(head1,40);
         Main.insert(head1,50);
-        Node head2 = new Node(10,null);
+        Node head2 = new Node(10);
         Main.insert(head2,10);
         Main.insert(head2,30);
         Main.insert(head2,32);

@@ -1,7 +1,7 @@
 public class SwapKthFromStartAndEnd {
     public static void main(String[] args) {
-        Node head = new Node(1,null);
-        head.next = new Node(2,null);
+        Node head = new Node(1);
+        head.next = new Node(2);
         head = swapkthnode(head,2,2);
         Main.printLL(head);
     }

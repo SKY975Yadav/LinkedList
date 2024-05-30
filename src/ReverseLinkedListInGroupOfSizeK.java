@@ -1,6 +1,6 @@
 public class ReverseLinkedListInGroupOfSizeK {
     public static void main(String[] args) {
-        Node head = new Node(10,null);
+        Node head = new Node(10);
         Main.insert(head,20);
         Main.insert(head,30);
         Main.insert(head,40);

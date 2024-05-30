@@ -2,19 +2,19 @@ import java.util.PriorityQueue;
 
 public class MergeK_SortedLists {
     public static void main(String[] args) {
-        Node head1 = new Node(10,null);
+        Node head1 = new Node(10);
         Main.insert(head1,20);
         Main.insert(head1,30);
         Main.insert(head1,40);
         Main.insert(head1,50);
-        Node head3 = new Node(10,null);
+        Node head3 = new Node(10);
         Main.insert(head3,16);
         Main.insert(head3,23);
         Main.insert(head3,35);
         Main.insert(head3,40);
         Main.insert(head3,50);
 
-        Node head2 = new Node(25,null);
+        Node head2 = new Node(25);
         Main.insert(head2,35);
         Main.insert(head2,45);
         Main.insert(head2,62);
@@ -35,7 +35,7 @@ public class MergeK_SortedLists {
             }
         }
 
-        Node dummy = new Node(0,null);
+        Node dummy = new Node(0);
         Node tail = dummy;
 
         // While there are elements in the min-heap

@@ -14,9 +14,8 @@ class TwoLinksNode{
 class Node{
     int data;
     Node next;
-    Node(int data,Node next){
+    Node(int data){
         this.data = data;
-        this.next = next;
     }
 
     @Override
@@ -30,7 +29,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Node head = new Node(10,null);
+        Node head = new Node(10);
         Main.insert(head,20);
         Main.insert(head,30);
         Main.insert(head,40);
@@ -50,7 +49,7 @@ public class Main {
 
     }
     static Node insert(Node head,int data){
-        Node temp = new Node(data,null);
+        Node temp = new Node(data);
         Node cur = head;
         while (cur.next != null){
             cur = cur.next;

@@ -1,6 +1,6 @@
 public class PalindromeOfLL {
     public static void main(String[] args) {
-        Node head = new Node(10,null);
+        Node head = new Node(10);
         Main.insert(head,20);
         Main.insert(head,30);
         Main.insert(head,40);
@@ -49,7 +49,7 @@ public class PalindromeOfLL {
     static Node reverseAndClone(Node node) {
         Node prev = null;
         while (node != null) {
-            Node newNode = new Node(node.data,null); // Clone the node
+            Node newNode = new Node(node.data); // Clone the node
             newNode.next = prev;
             prev = newNode;
             node = node.next;

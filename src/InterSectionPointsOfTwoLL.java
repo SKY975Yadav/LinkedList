@@ -1,7 +1,7 @@
 public class InterSectionPointsOfTwoLL {
     public static void main(String[] args) {
 
-        Node head1 = new Node(10,null);
+        Node head1 = new Node(10);
         Main.insert(head1,20);
         Main.insert(head1,30);
         Main.insert(head1,40);
@@ -12,7 +12,7 @@ public class InterSectionPointsOfTwoLL {
         Main.insert(head1,90);
         Main.insert(head1,100);
 
-        Node head2 = new Node(25,null);
+        Node head2 = new Node(25);
         Main.insert(head2,35);
         Main.insert(head2,45);
         Main.insert(head2,temp);

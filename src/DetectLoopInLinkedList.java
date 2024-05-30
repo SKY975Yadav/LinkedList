@@ -2,11 +2,12 @@ import java.util.HashSet;
 
 public class DetectLoopInLinkedList {
     public static void main(String[] args) {
-        Node head = new Node(10,null);
-        Node temp = head.next = new Node(20,null);
-        head.next.next = new Node(30,null);
-        head.next.next.next = new Node(40,null);
-        head.next.next.next.next = new Node(50,temp);
+        Node head = new Node(10);
+        Node temp = head.next = new Node(20);
+        head.next.next = new Node(30);
+        head.next.next.next = new Node(40);
+        head.next.next.next.next = new Node(50);
+        head.next.next.next.next.next = temp;
 
 //        System.out.println(detectLoop(head));
 //        System.out.println(detectLoopUsingHash(head));
@@ -15,7 +16,7 @@ public class DetectLoopInLinkedList {
     public static boolean detectLoop(Node head){ // Modify original linkedlist
 
         Node cur = head;
-        Node dammy = new Node(-1,null);
+        Node dammy = new Node(-1);
         while (cur!=null){
             if (cur.next==dammy){
                 return true;

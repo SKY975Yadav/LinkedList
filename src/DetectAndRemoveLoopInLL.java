@@ -1,11 +1,11 @@
 public class DetectAndRemoveLoopInLL {
     public static void main(String[] args) {
-        Node head = new Node(10,null);
-        Node temp = head.next = new Node(20,null);
-        head.next.next = new Node(30,null);
-        head.next.next.next = new Node(40,null);
-        head.next.next.next.next = new Node(50,temp);
-
+        Node head = new Node(10);
+        Node temp = head.next = new Node(20);
+        head.next.next = new Node(30);
+        head.next.next.next = new Node(40);
+        head.next.next.next.next = new Node(50);
+        head.next.next.next.next.next = temp;
 //        Main.printLL(head);
         detectAndRemoveLoop(head);
         Main.printLL(head);

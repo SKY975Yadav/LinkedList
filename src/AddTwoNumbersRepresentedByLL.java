@@ -1,11 +1,11 @@
 public class AddTwoNumbersRepresentedByLL {
     public static void main(String[] args) {
-        Node head1 = new Node(1,null);
+        Node head1 = new Node(1);
         Main.insert(head1,2);
         Main.insert(head1,3);
         Main.insert(head1,4);
 
-        Node head2 = new Node(2,null);
+        Node head2 = new Node(2);
         Main.insert(head2,3);
         Main.insert(head2,5);
         Main.insert(head2,7);
@@ -18,9 +18,9 @@ public class AddTwoNumbersRepresentedByLL {
         num1 = reverse(trimZero(num1));
         num2 = reverse(trimZero(num2));
 
-        if(num1 == null && num2 == null)return new Node(0,null);
+        if(num1 == null && num2 == null)return new Node(0);
 
-        Node head = new Node(-1,null);
+        Node head = new Node(-1);
         Node tail = head;
         int carry = 0;
 
@@ -30,7 +30,7 @@ public class AddTwoNumbersRepresentedByLL {
 
             int d = x+y+carry;
             carry = d/10;
-            tail.next = new Node(d%10,null);
+            tail.next = new Node(d%10);
             tail = tail.next;
 
             if(num1 != null)num1 = num1.next;
